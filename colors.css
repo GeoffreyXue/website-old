@@ -1,0 +1,15 @@
+body {
+    /* black color pallete, 1-5, 5 being the lightest */
+    --blackcolorpal1: rgb(14,17,17);
+    --blackcolorpal2: rgb(35,43,43);
+    --blackcolorpal3: rgb(53,56,57);
+    --blackcolorpal4: rgb(59,68,75);
+    --blackcolorpal5: rgb(65,74,76);
+
+    /* skyblue color pallete, 1-5, 5 being the lightest */
+    --skybluecolorpal1: rgb(80,184,231);
+    --skybluecolorpal2: rgb(132,205,238);
+    --skybluecolorpal3: rgb(185,226,245);
+    --skybluecolorpal4: rgb(220,240,250);
+    --skybluecolorpal5: rgb(237,247,252);
+}

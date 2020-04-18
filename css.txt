@@ -1,0 +1,10 @@
+Remember to do css in order:
+
+1. position, z-index, top/bottom/left/right, float
+2. display, opacity, transform
+3. overflow, clip
+4. animation, transition
+5. margin, border, width, height, padding
+6. background, cursor
+7. font-size, font-family, font-weight, font-style, text-align, color
+8. :hover, :focus, :active, :before, :after,
