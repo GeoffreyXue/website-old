@@ -11,7 +11,7 @@ class NavHeader extends HTMLElement
         this.projects.setAttribute("class", "projects");
         this.contactInfo.setAttribute("class", "contactInfo");
 
-        this.home.setAttribute("href", "hindex.html");
+        this.home.setAttribute("href", "index.html");
         this.projects.setAttribute("href", "hprojects.html");
         this.contactInfo.setAttribute("href", "hcontactInfo.html");
 
