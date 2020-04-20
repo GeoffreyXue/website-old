@@ -39,12 +39,10 @@ nav-header {
     grid-template-columns: repeat(4, 1fr) 2fr;
     grid-template-rows: 100%;
 
-
     min-width: 100%;
     max-width: 100%;
     min-height: 80px;
     max-height: 80px;
-
 
     background-color: var(--blackcolorpalop2);
 }
@@ -52,6 +50,7 @@ nav-header {
 nav-header > a {
     transition: background-color 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 
+    text-decoration: none;
     background-color: var(--blackcolorpalop2);
 }
 
