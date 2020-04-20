@@ -1,44 +1,73 @@
 body {
-    display: grid;
-    grid-template-rows: 80px calc(100vh - 80px);
-    grid-template-areas: "nav" "content";
+    display: block;
 
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     margin: 0;
     max-width: 100vw;
     min-height: 100vh;
+    max-height: 100vh;
     padding: 0;
 
     cursor: crosshair;
-    background-color: var(--blackcolorpal2)
+    background-image: url("imgs/contentBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--blackcolorpal1);
+  background-color: var(--blackcolorpal1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blackcolorpal5);
+  outline: 1px solid slategrey;
 }
 
 nav-header {
-    z-index: 1;
+    position: sticky;
+    top: 0;
+
     grid-area: "nav";
     display: grid;
     grid-template-columns: repeat(4, 1fr) 2fr;
     grid-template-rows: 100%;
 
-    column-gap: 10px;
 
     min-width: 100%;
     max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
+    min-height: 80px;
+    max-height: 80px;
 
 
-    background-color: var(--blackcolorpal2);
+    background-color: var(--blackcolorpalop2);
+}
+
+nav-header > a {
+    transition: background-color 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+    background-color: var(--blackcolorpalop2);
+}
+
+nav-header > a:hover {
+    background-color: var(--blackcolorpalop1);
 }
 
 nav-header > * {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
 
     justify-self: stretch;
-    align-self: center;
+    align-self: stretch;
 
-    padding: 13px 0;
+    justify-content: center;
+    align-items: center;
 
     font-size: 16px;
     font-family: sans-serif;
@@ -47,6 +76,8 @@ nav-header > * {
 }
 
 nav-header > * > img {
+    display: block;
+
     opacity: 0.35;
     transition: opacity 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -57,12 +88,12 @@ nav-header > * > div {
     transition: opacity 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-nav-header > div:hover > div {
+nav-header > a:hover > div {
     opacity: 1;
     display: block;
 }
 
-nav-header > div:hover > img {
+nav-header > a:hover > img {
     opacity: 1;
 }
 
@@ -78,31 +109,9 @@ nav-header > .contactinfo {
     grid-column: 3 / 4;
 }
 
-.content {
-    z-index: 2;
-    overflow-y: scroll;
-
-    max-height: 100%;
-    background-image: url("imgs/contentBackground.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.content::-webkit-scrollbar {
-  width: 1em;
-}
-
-.content::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px var(--blackcolorpal1);
-  background-color: var(--blackcolorpal1);
-}
-
-.content::-webkit-scrollbar-thumb {
-  background-color: var(--blackcolorpal5);
-  outline: 1px solid slategrey;
-}
-
 .test {
+    display: block;
+
     overflow: hidden;
 
     min-height: 1500px;
@@ -113,6 +122,8 @@ nav-header > .contactinfo {
 }
 
 .test2 {
+    display: block;
+
     overflow: hidden;
 
     min-height: 2000px;

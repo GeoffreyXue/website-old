@@ -6,6 +6,13 @@ body {
     --blackcolorpal4: rgb(59,68,75);
     --blackcolorpal5: rgb(65,74,76);
 
+    /* black color pallete with opacity, 1-5, 5 being the lightest */
+    --blackcolorpalop1: rgba(14,17,17,0.7);
+    --blackcolorpalop2: rgba(35,43,43,0.7);
+    --blackcolorpalop3: rgba(53,56,57,0.7);
+    --blackcolorpalop5: rgba(65,74,76,0.7);
+    --blackcolorpalop4: rgba(59,68,75,0.7);
+
     /* skyblue color pallete, 1-5, 5 being the lightest */
     --skybluecolorpal1: rgb(80,184,231);
     --skybluecolorpal2: rgb(132,205,238);

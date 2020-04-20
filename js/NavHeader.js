@@ -3,13 +3,17 @@ class NavHeader extends HTMLElement
     constructor()
     {
         super();
-        this.home = document.createElement("div");
-        this.projects = document.createElement("div");
-        this.contactInfo = document.createElement("div");
+        this.home = document.createElement("a");
+        this.projects = document.createElement("a");
+        this.contactInfo = document.createElement("a");
 
         this.home.setAttribute("class", "home");
         this.projects.setAttribute("class", "projects");
         this.contactInfo.setAttribute("class", "contactInfo");
+
+        this.home.setAttribute("href", "hindex.html");
+        this.projects.setAttribute("href", "hprojects.html");
+        this.contactInfo.setAttribute("href", "hcontactInfo.html");
 
         this.appendChild(this.home);
         this.appendChild(this.projects);
@@ -38,37 +42,6 @@ class NavHeader extends HTMLElement
         let contactInfoText = document.createElement("div");
         this.contactInfo.appendChild(contactInfoText);
         contactInfoText.innerHTML = "Contact Info";
-        /*
-        // mouse enter and mouse leave events
-        let navHeader = document.querySelector("nav-header");
-        //console.log(navHeader);
-        let navTabs = navHeader.querySelectorAll("nav-header > div");
-        //console.log(navTabs);
-        for (let i = 0; i < navTabs.length; i++)
-        {
-            let tab = navTabs[i];
-            //console.log(navTabs[i]);
-            //console.log(tab);
-            tab.addEventListener("mouseenter", function()
-            {
-                let image = tab.querySelector("img");
-                image.setAttribute(opacity, 1);
-                console.log(image);
-                let info = tab.querySelector("div");
-                info.setAttribute(display, "block");
-                console.log(info);
-            });
-            tab.addEventListener("mouseenter", function()
-            {
-                let image = tab.querySelector("img");
-                image.setAttribute(opacity, 1);
-                console.log(image);
-                let info = tab.querySelector("div");
-                info.setAttribute(display, "block");
-                console.log(info);
-            });
-        }
-        */
     }
 }
 
