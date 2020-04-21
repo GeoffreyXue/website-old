@@ -20,7 +20,7 @@ class NavHeader extends HTMLElement
         this.appendChild(this.contactInfo);
 
         let homeImage = new Image(32, 32);
-        homeImage.src = "imgs/homeIcon.png";
+        homeImage.src = "/website-testing/imgs/homeIcon.png";
         this.home.appendChild(homeImage);
 
         let homeText = document.createElement("div");
@@ -28,7 +28,7 @@ class NavHeader extends HTMLElement
         homeText.innerHTML = "Home";
 
         let projectsImage = new Image(32, 32);
-        projectsImage.src = "imgs/projectsIcon.png";
+        projectsImage.src = "/website-testing/imgs/projectsIcon.png";
         this.projects.appendChild(projectsImage);
 
         let projectsText = document.createElement("div");
@@ -36,7 +36,7 @@ class NavHeader extends HTMLElement
         projectsText.innerHTML = "Projects";
 
         let contactInfoImage = new Image(40, 32);
-        contactInfoImage.src = "imgs/contactInfoIcon.png";
+        contactInfoImage.src = "/website-testing/imgs/contactInfoIcon.png";
         this.contactInfo.appendChild(contactInfoImage);
 
         let contactInfoText = document.createElement("div");
