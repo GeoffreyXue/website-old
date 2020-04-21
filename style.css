@@ -11,7 +11,7 @@ body {
     padding: 0;
 
     cursor: crosshair;
-    background-image: url("/imgs/contentBackground.jpg");
+    background-image: url("/website-testing/imgs/contentBackground.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -115,7 +115,7 @@ nav-header > .contactinfo {
 
     min-height: 1500px;
 
-    background-image: url("/imgs/testing.jpg");
+    background-image: url("/website-testing/imgs/testing.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -127,7 +127,7 @@ nav-header > .contactinfo {
 
     min-height: 2000px;
 
-    background-image: url("/imgs/contentBackground.jpg");
+    background-image: url("/website-testing/imgs/contentBackground.jpg");
     background-size: cover;
     background-position: center;
 }
