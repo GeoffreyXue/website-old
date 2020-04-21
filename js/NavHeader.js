@@ -21,7 +21,6 @@ class NavHeader extends HTMLElement
 
         let homeImage = new Image(32, 32);
         homeImage.src = "/website-testing/imgs/homeIcon.png";
-        console.log("yo im here");
         this.home.appendChild(homeImage);
 
         let homeText = document.createElement("div");
@@ -43,7 +42,6 @@ class NavHeader extends HTMLElement
         let contactInfoText = document.createElement("div");
         this.contactInfo.appendChild(contactInfoText);
         contactInfoText.innerHTML = "Contact Info";
-        //test
     }
 }
 
