@@ -1,0 +1,8 @@
+.namecard {
+    display: block;
+
+    margin: 25vh 50vh 25vh 0;
+
+    background-color: var(--blackcolorpal2);
+    color: white;
+}
