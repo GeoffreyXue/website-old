@@ -42,6 +42,7 @@ class NavHeader extends HTMLElement
         let contactInfoText = document.createElement("div");
         this.contactInfo.appendChild(contactInfoText);
         contactInfoText.innerHTML = "Contact Info";
+        //test
     }
 }
 
