@@ -1,3 +1,4 @@
+
 body {
     display: block;
 
@@ -11,9 +12,7 @@ body {
     padding: 0;
 
     cursor: crosshair;
-    background-image: url("/website-testing/imgs/contentBackground.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: var(--blackcolorpal5);
 }
 
 body::-webkit-scrollbar {
@@ -27,12 +26,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--blackcolorpal5);
+  background-color: var(--blackcolorpal4);
   outline: 1px solid slategrey;
 }
 
 nav-header {
     position: sticky;
+    z-index: 100;
     top: 0;
 
     grid-area: "nav";
@@ -116,7 +116,7 @@ nav-header > .contactinfo {
 
     min-height: 1500px;
 
-    background-image: url("/website-testing/imgs/testing.jpg");
+    background-image: url("imgs/testing.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -128,7 +128,7 @@ nav-header > .contactinfo {
 
     min-height: 2000px;
 
-    background-image: url("/website-testing/imgs/contentBackground.jpg");
+    background-image: url("imgs/contentBackground.jpg");
     background-size: cover;
     background-position: center;
 }

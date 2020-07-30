@@ -11,16 +11,16 @@ class NavHeader extends HTMLElement
         this.projects.setAttribute("class", "projects");
         this.contactInfo.setAttribute("class", "contactInfo");
 
-        this.home.setAttribute("href", "/website-testing/");
-        this.projects.setAttribute("href", "/website-testing/projects");
-        this.contactInfo.setAttribute("href", "/website-testing/contactInfo");
+        this.home.setAttribute("href", "");
+        this.projects.setAttribute("href", "tab-projects");
+        this.contactInfo.setAttribute("href", "tab-contactInfo");
 
         this.appendChild(this.home);
         this.appendChild(this.projects);
         this.appendChild(this.contactInfo);
 
         let homeImage = new Image(32, 32);
-        homeImage.src = "/website-testing/imgs/homeIcon.png";
+        homeImage.src = "imgs/homeIcon.png";
         this.home.appendChild(homeImage);
 
         let homeText = document.createElement("div");
@@ -28,7 +28,7 @@ class NavHeader extends HTMLElement
         homeText.innerHTML = "Home";
 
         let projectsImage = new Image(32, 32);
-        projectsImage.src = "/website-testing/imgs/projectsIcon.png";
+        projectsImage.src = "imgs/projectsIcon.png";
         this.projects.appendChild(projectsImage);
 
         let projectsText = document.createElement("div");
@@ -36,7 +36,7 @@ class NavHeader extends HTMLElement
         projectsText.innerHTML = "Projects";
 
         let contactInfoImage = new Image(40, 32);
-        contactInfoImage.src = "/website-testing/imgs/contactInfoIcon.png";
+        contactInfoImage.src = "imgs/contactInfoIcon.png";
         this.contactInfo.appendChild(contactInfoImage);
 
         let contactInfoText = document.createElement("div");
