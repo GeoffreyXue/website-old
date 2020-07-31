@@ -3,7 +3,7 @@
     min-width: 100%;
     min-height: 100%;
 
-    background-image: url("imgs/contentBackground.jpg");
+    background-image: url("imgs/homeBackground.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -13,7 +13,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0.9;
+    opacity: 0.8;
 
     margin: 35vh 50vw 25vh 0;
     border: 1px;
@@ -67,4 +67,9 @@
     font-family: arial, sans-serif;
 
     background-color: slategray;
+}
+
+.space {
+    min-height: 1000px;
+    width: 100%;
 }

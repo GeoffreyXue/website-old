@@ -1,0 +1,46 @@
+
+body {
+    background-image: url("../imgs/contactInfoBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+    font-family: arial, sans-serif;
+}
+
+.container {
+    
+    opacity: 0.88;
+
+    margin: 20px auto;
+
+    width: calc(80vw - 40px);
+    height: calc(80vh - 40px);
+
+    background-color: var(--blackcolorpal2)
+}
+
+.container > .title {
+    padding: 30px 0 0 30px;
+    margin: 0;
+
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.container > .contacts {
+    list-style-type: none;
+    margin: 15px 30px;
+    padding: 0;
+
+    line-height: 1.5;
+
+    font-size: 24px;
+}
