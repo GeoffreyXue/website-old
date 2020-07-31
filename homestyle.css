@@ -1,4 +1,8 @@
 
+body {
+    font-family: 'Noto Sans';
+}
+
 .top {
     min-width: 100%;
     min-height: 100%;
@@ -22,7 +26,7 @@
     padding: 0 2.5%;
 
     color: white;
-    font-family: arial, sans-serif;
+
 
     background-color: var(--blackcolorpal3)
 }
