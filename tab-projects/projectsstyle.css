@@ -1,0 +1,37 @@
+.top {
+    min-width: 100%;
+    min-height: 100%;
+
+    background-image: url("../imgs/projectsBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.namecard {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.94;
+
+    margin: 35vh 50vw 25vh 0;
+    border: 1px;
+    max-width: 100%;
+    height: 35vh;
+    padding: 0 2.5%;
+
+    color: white;
+
+
+    background-color: var(--blackcolorpal3)
+}
+
+.namecard > .title {
+    margin-bottom: 5%;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.card-holder {
+    display: flex;
+    flex-flow: row wrap;
+}
